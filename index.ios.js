@@ -18,6 +18,7 @@ import {
 import { Col, Row, Grid } from "react-native-easy-grid";
 
 import Sound from 'react-native-sound';
+import Orientation from "react-native-orientation";
 
 // List sounds
 let sounds = [
@@ -50,6 +51,15 @@ export default class Kylo extends Component {
 
     }
 
+  }
+
+  componentDidMount = () => {
+    Orientation.addOrientationListener(this._orientationDidChange);
+    Orientation.lockToLandscape();
+  }
+
+  _orientationDidChange = () => {
+    console.log("changed");
   }
 
   padPress = (padNum) => {
@@ -90,6 +100,8 @@ export default class Kylo extends Component {
     let padWidth = {
       "width": width * 0.25
     }
+
+    console.log("width is " , width);
 
     let numPads = 16;
     let numCols = 4;
