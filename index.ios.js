@@ -21,9 +21,9 @@ import Sound from 'react-native-sound';
 
 // List sounds
 let sounds = [
-  "bass 1",
-  "bass 2",
   "kick1",
+  "bass 2",
+  "bass 1",
   "rip 1",
   "shake 1",
   "snare 1"
@@ -52,11 +52,17 @@ export default class Kylo extends Component {
 
   }
 
-  padPress = () => {
+  padPress = (padNum) => {
 
-    console.log("play sound");
-    soundFiles[0].stop();
-    soundFiles[0].play((success) => {
+    console.log("play sound " , padNum);
+
+    // Cancel if we don't have sound
+    if (padNum > soundFiles.length -1) {
+      return;
+    }
+
+    soundFiles[padNum].stop();
+    soundFiles[padNum].play((success) => {
       if (success) {
         console.log('successfully finished playing');
       } else {
@@ -64,6 +70,15 @@ export default class Kylo extends Component {
       }
     });
   }
+
+  getRandomColor = () => {
+      var letters = '0123456789ABCDEF'.split('');
+      var color = '#';
+      for (var i = 0; i < 6; i++ ) {
+          color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+  };
 
   render() {
 
@@ -76,37 +91,47 @@ export default class Kylo extends Component {
       "width": width * 0.25
     }
 
-    let padNumber = 16;
+    let numPads = 16;
+    let numCols = 4;
     let pads = [];
+    let padNum = 0;
 
-    for (let i = 0; i < padNumber; i++) {
+    for (let i = 0; i < numPads; i++) {
+
+      let randomColor = this.getRandomColor();
+
+      let rowStyle = {
+        backgroundColor: randomColor
+      }
+
       pads.push(<Row
-        style={[styles.green, {flex: 1}]}>
-          <TouchableHighlight onPress={this.padPress} underlayColor="gray">
+        key={`row-${i}`}
+        style={[rowStyle, {flex: 1}]}>
+          <TouchableHighlight onPressIn={this.padPress.bind(this, padNum)} underlayColor="gray">
             <View style={[padWidth]}></View>
           </TouchableHighlight>
         </Row>
       )
+
+      padNum++;
     }
+
+    let cols = [];
+    for (let j = 0; j < numCols; j++) {
+
+      let rows = pads.slice(4 * j, 4 * j + 4);
+
+      cols.push(<Col key={`col-${j}`}>
+          {rows}
+        </Col>
+      )
+    }
+
 
     return (
       <View style={[{flex: 1}]}>
         <Grid>
-          <Col>
-            <Row style={styles.blue}>
-            </Row>
-            <Row style={[styles.green, {flex: 1}]}>
-              <TouchableHighlight onPress={this.padPress} underlayColor="gray">
-                <View style={[padWidth]}></View>
-              </TouchableHighlight>
-            </Row>
-            <Row style={styles.blue}></Row>
-          </Col>
-          <Col>
-            <Row style={styles.green}></Row>
-            <Row style={styles.blue}></Row>
-            <Row style={styles.green}></Row>
-          </Col>
+          {cols}
         </Grid>
       </View>
     );
@@ -131,6 +156,12 @@ const styles = StyleSheet.create({
   },
   green: {
     backgroundColor: "green"
+  },
+  orange: {
+    backgroundColor: "orange"
+  },
+  purple: {
+    backgroundColor: "purple"
   }
 });
 
