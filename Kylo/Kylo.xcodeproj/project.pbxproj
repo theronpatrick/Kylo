@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E20ED0F61E1F3D62008FE828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20ED0F51E1F3D62008FE828 /* AppDelegate.swift */; };
+		E20ED0F81E1F3D62008FE828 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20ED0F71E1F3D62008FE828 /* ViewController.swift */; };
+		E20ED0FB1E1F3D62008FE828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20ED0F91E1F3D62008FE828 /* Main.storyboard */; };
+		E20ED0FD1E1F3D62008FE828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20ED0FC1E1F3D62008FE828 /* Assets.xcassets */; };
+		E20ED1001E1F3D62008FE828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20ED0FE1E1F3D62008FE828 /* LaunchScreen.storyboard */; };
+		E20ED10B1E1F3D62008FE828 /* kyloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20ED10A1E1F3D62008FE828 /* kyloTests.swift */; };
+		E20ED1161E1F3D62008FE828 /* kyloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20ED1151E1F3D62008FE828 /* kyloUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E20ED1071E1F3D62008FE828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E20ED0EA1E1F3D61008FE828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E20ED0F11E1F3D61008FE828;
+			remoteInfo = kylo;
+		};
+		E20ED1121E1F3D62008FE828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E20ED0EA1E1F3D61008FE828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E20ED0F11E1F3D61008FE828;
+			remoteInfo = kylo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E20ED0F21E1F3D62008FE828 /* kylo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20ED0F51E1F3D62008FE828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E20ED0F71E1F3D62008FE828 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E20ED0FA1E1F3D62008FE828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E20ED0FC1E1F3D62008FE828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E20ED0FF1E1F3D62008FE828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E20ED1011E1F3D62008FE828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E20ED1061E1F3D62008FE828 /* kyloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kyloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20ED10A1E1F3D62008FE828 /* kyloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kyloTests.swift; sourceTree = "<group>"; };
+		E20ED10C1E1F3D62008FE828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E20ED1111E1F3D62008FE828 /* kyloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kyloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20ED1151E1F3D62008FE828 /* kyloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kyloUITests.swift; sourceTree = "<group>"; };
+		E20ED1171E1F3D62008FE828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E20ED0EF1E1F3D61008FE828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20ED1031E1F3D62008FE828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20ED10E1E1F3D62008FE828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E20ED0E91E1F3D61008FE828 = {
+			isa = PBXGroup;
+			children = (
+				E20ED0F41E1F3D62008FE828 /* kylo */,
+				E20ED1091E1F3D62008FE828 /* kyloTests */,
+				E20ED1141E1F3D62008FE828 /* kyloUITests */,
+				E20ED0F31E1F3D62008FE828 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E20ED0F31E1F3D62008FE828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E20ED0F21E1F3D62008FE828 /* kylo.app */,
+				E20ED1061E1F3D62008FE828 /* kyloTests.xctest */,
+				E20ED1111E1F3D62008FE828 /* kyloUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20ED0F41E1F3D62008FE828 /* kylo */ = {
+			isa = PBXGroup;
+			children = (
+				E20ED0F51E1F3D62008FE828 /* AppDelegate.swift */,
+				E20ED0F71E1F3D62008FE828 /* ViewController.swift */,
+				E20ED0F91E1F3D62008FE828 /* Main.storyboard */,
+				E20ED0FC1E1F3D62008FE828 /* Assets.xcassets */,
+				E20ED0FE1E1F3D62008FE828 /* LaunchScreen.storyboard */,
+				E20ED1011E1F3D62008FE828 /* Info.plist */,
+			);
+			path = kylo;
+			sourceTree = "<group>";
+		};
+		E20ED1091E1F3D62008FE828 /* kyloTests */ = {
+			isa = PBXGroup;
+			children = (
+				E20ED10A1E1F3D62008FE828 /* kyloTests.swift */,
+				E20ED10C1E1F3D62008FE828 /* Info.plist */,
+			);
+			path = kyloTests;
+			sourceTree = "<group>";
+		};
+		E20ED1141E1F3D62008FE828 /* kyloUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E20ED1151E1F3D62008FE828 /* kyloUITests.swift */,
+				E20ED1171E1F3D62008FE828 /* Info.plist */,
+			);
+			path = kyloUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E20ED0F11E1F3D61008FE828 /* kylo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E20ED11A1E1F3D62008FE828 /* Build configuration list for PBXNativeTarget "kylo" */;
+			buildPhases = (
+				E20ED0EE1E1F3D61008FE828 /* Sources */,
+				E20ED0EF1E1F3D61008FE828 /* Frameworks */,
+				E20ED0F01E1F3D61008FE828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kylo;
+			productName = kylo;
+			productReference = E20ED0F21E1F3D62008FE828 /* kylo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E20ED1051E1F3D62008FE828 /* kyloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E20ED11D1E1F3D62008FE828 /* Build configuration list for PBXNativeTarget "kyloTests" */;
+			buildPhases = (
+				E20ED1021E1F3D62008FE828 /* Sources */,
+				E20ED1031E1F3D62008FE828 /* Frameworks */,
+				E20ED1041E1F3D62008FE828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E20ED1081E1F3D62008FE828 /* PBXTargetDependency */,
+			);
+			name = kyloTests;
+			productName = kyloTests;
+			productReference = E20ED1061E1F3D62008FE828 /* kyloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E20ED1101E1F3D62008FE828 /* kyloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E20ED1201E1F3D62008FE828 /* Build configuration list for PBXNativeTarget "kyloUITests" */;
+			buildPhases = (
+				E20ED10D1E1F3D62008FE828 /* Sources */,
+				E20ED10E1E1F3D62008FE828 /* Frameworks */,
+				E20ED10F1E1F3D62008FE828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E20ED1131E1F3D62008FE828 /* PBXTargetDependency */,
+			);
+			name = kyloUITests;
+			productName = kyloUITests;
+			productReference = E20ED1111E1F3D62008FE828 /* kyloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E20ED0EA1E1F3D61008FE828 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Theron Patrick";
+				TargetAttributes = {
+					E20ED0F11E1F3D61008FE828 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XCKX87M3JM;
+						ProvisioningStyle = Automatic;
+					};
+					E20ED1051E1F3D62008FE828 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XCKX87M3JM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E20ED0F11E1F3D61008FE828;
+					};
+					E20ED1101E1F3D62008FE828 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XCKX87M3JM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E20ED0F11E1F3D61008FE828;
+					};
+				};
+			};
+			buildConfigurationList = E20ED0ED1E1F3D61008FE828 /* Build configuration list for PBXProject "kylo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E20ED0E91E1F3D61008FE828;
+			productRefGroup = E20ED0F31E1F3D62008FE828 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E20ED0F11E1F3D61008FE828 /* kylo */,
+				E20ED1051E1F3D62008FE828 /* kyloTests */,
+				E20ED1101E1F3D62008FE828 /* kyloUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E20ED0F01E1F3D61008FE828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20ED1001E1F3D62008FE828 /* LaunchScreen.storyboard in Resources */,
+				E20ED0FD1E1F3D62008FE828 /* Assets.xcassets in Resources */,
+				E20ED0FB1E1F3D62008FE828 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20ED1041E1F3D62008FE828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20ED10F1E1F3D62008FE828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E20ED0EE1E1F3D61008FE828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20ED0F81E1F3D62008FE828 /* ViewController.swift in Sources */,
+				E20ED0F61E1F3D62008FE828 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20ED1021E1F3D62008FE828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20ED10B1E1F3D62008FE828 /* kyloTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20ED10D1E1F3D62008FE828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20ED1161E1F3D62008FE828 /* kyloUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E20ED1081E1F3D62008FE828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E20ED0F11E1F3D61008FE828 /* kylo */;
+			targetProxy = E20ED1071E1F3D62008FE828 /* PBXContainerItemProxy */;
+		};
+		E20ED1131E1F3D62008FE828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E20ED0F11E1F3D61008FE828 /* kylo */;
+			targetProxy = E20ED1121E1F3D62008FE828 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E20ED0F91E1F3D62008FE828 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E20ED0FA1E1F3D62008FE828 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E20ED0FE1E1F3D62008FE828 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E20ED0FF1E1F3D62008FE828 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E20ED1181E1F3D62008FE828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E20ED1191E1F3D62008FE828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E20ED11B1E1F3D62008FE828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XCKX87M3JM;
+				INFOPLIST_FILE = kylo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = taetro.kylo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E20ED11C1E1F3D62008FE828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XCKX87M3JM;
+				INFOPLIST_FILE = kylo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = taetro.kylo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E20ED11E1E1F3D62008FE828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XCKX87M3JM;
+				INFOPLIST_FILE = kyloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = taetro.kyloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kylo.app/kylo";
+			};
+			name = Debug;
+		};
+		E20ED11F1E1F3D62008FE828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XCKX87M3JM;
+				INFOPLIST_FILE = kyloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = taetro.kyloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kylo.app/kylo";
+			};
+			name = Release;
+		};
+		E20ED1211E1F3D62008FE828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XCKX87M3JM;
+				INFOPLIST_FILE = kyloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = taetro.kyloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = kylo;
+			};
+			name = Debug;
+		};
+		E20ED1221E1F3D62008FE828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XCKX87M3JM;
+				INFOPLIST_FILE = kyloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = taetro.kyloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = kylo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E20ED0ED1E1F3D61008FE828 /* Build configuration list for PBXProject "kylo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20ED1181E1F3D62008FE828 /* Debug */,
+				E20ED1191E1F3D62008FE828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E20ED11A1E1F3D62008FE828 /* Build configuration list for PBXNativeTarget "kylo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20ED11B1E1F3D62008FE828 /* Debug */,
+				E20ED11C1E1F3D62008FE828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E20ED11D1E1F3D62008FE828 /* Build configuration list for PBXNativeTarget "kyloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20ED11E1E1F3D62008FE828 /* Debug */,
+				E20ED11F1E1F3D62008FE828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E20ED1201E1F3D62008FE828 /* Build configuration list for PBXNativeTarget "kyloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20ED1211E1F3D62008FE828 /* Debug */,
+				E20ED1221E1F3D62008FE828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E20ED0EA1E1F3D61008FE828 /* Project object */;
+}
