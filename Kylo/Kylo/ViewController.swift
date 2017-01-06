@@ -26,9 +26,15 @@ class ViewController: UIViewController {
 
     @IBAction func onButtonTouch(_ sender: Any) {
         print("Touchy")
+        var tag = (sender as AnyObject).tag
         print((sender as AnyObject).tag)
         
-        let url = Bundle.main.url(forResource: "soundName", withExtension: "mp3")!
+        var url = Bundle.main.url(forResource: "kick1", withExtension: "wav")!
+        
+        if (tag == 1) {
+          url = Bundle.main.url(forResource: "rip 1", withExtension: "wav")!
+        }
+        
         
         do {
             player = try AVAudioPlayer(contentsOf: url)
