@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,29 +20,90 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHC-Xd-ehY">
-                                <rect key="frame" x="48" y="206" width="94" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kR9-6h-GJM">
+                                <rect key="frame" x="20" y="50" width="133.5" height="75"/>
                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <state key="normal" title="Kylo"/>
                                 <connections>
-                                    <action selector="onButtonTouch:" destination="BYZ-38-t0r" eventType="touchDown" id="nAE-kF-Z7p"/>
+                                    <action selector="onButtonTouch:" destination="BYZ-38-t0r" eventType="touchDown" id="JxC-g5-5wV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gps-fe-kXI">
-                                <rect key="frame" x="189" y="206" width="94" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBm-HL-6IU">
+                                <rect key="frame" x="20" y="155" width="133.5" height="75"/>
                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <state key="normal" title="Kylo"/>
                                 <connections>
-                                    <action selector="onButtonTouch:" destination="BYZ-38-t0r" eventType="touchDown" id="HRr-We-h5X"/>
+                                    <action selector="onButtonTouch:" destination="BYZ-38-t0r" eventType="touchDown" id="U75-bn-vNk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtS-fK-Sf5">
+                                <rect key="frame" x="20" y="260" width="133.5" height="75"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <state key="normal" title="Kylo"/>
+                                <connections>
+                                    <action selector="onButtonTouch:" destination="BYZ-38-t0r" eventType="touchDown" id="bSx-zA-OXk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxq-Kx-xoH">
+                                <rect key="frame" x="198" y="50" width="133.5" height="75"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <state key="normal" title="Kylo"/>
+                                <connections>
+                                    <action selector="onButtonTouch:" destination="BYZ-38-t0r" eventType="touchDown" id="NFr-Pl-ugf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwn-Bp-MzQ">
+                                <rect key="frame" x="198" y="155" width="133.5" height="75"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <state key="normal" title="Kylo"/>
+                                <connections>
+                                    <action selector="onButtonTouch:" destination="BYZ-38-t0r" eventType="touchDown" id="mEu-ym-86g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPS-2R-PN0">
+                                <rect key="frame" x="198" y="260" width="133.5" height="75"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <state key="normal" title="Kylo"/>
+                                <connections>
+                                    <action selector="onButtonTouch:" destination="BYZ-38-t0r" eventType="touchDown" id="3YL-oQ-MI6"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hPS-2R-PN0" firstAttribute="top" secondItem="Dwn-Bp-MzQ" secondAttribute="bottom" constant="30" id="0Mb-MI-GaO"/>
+                            <constraint firstItem="Yxq-Kx-xoH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/5" id="0P2-sS-TVt"/>
+                            <constraint firstItem="kR9-6h-GJM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5Pi-lH-56U"/>
+                            <constraint firstItem="Dwn-Bp-MzQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/5" identifier="1000" id="CJr-dI-3XH"/>
+                            <constraint firstItem="EtS-fK-Sf5" firstAttribute="top" secondItem="XBm-HL-6IU" secondAttribute="bottom" constant="30" id="I1V-Ie-GwV"/>
+                            <constraint firstItem="EtS-fK-Sf5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/5" id="IbG-wL-At7"/>
+                            <constraint firstItem="Yxq-Kx-xoH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="JLU-kq-dgs"/>
+                            <constraint firstItem="kR9-6h-GJM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/5" id="Pec-RJ-cmM"/>
+                            <constraint firstItem="kR9-6h-GJM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="Rpp-r4-nBh"/>
+                            <constraint firstItem="Dwn-Bp-MzQ" firstAttribute="top" secondItem="Yxq-Kx-xoH" secondAttribute="bottom" constant="30" id="SYl-Dc-1lO"/>
+                            <constraint firstItem="XBm-HL-6IU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/5" id="Uye-JG-IbL"/>
+                            <constraint firstItem="kR9-6h-GJM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/5" id="VAh-kX-Aks"/>
+                            <constraint firstItem="Dwn-Bp-MzQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/5" id="VjK-7t-K5T"/>
+                            <constraint firstItem="Yxq-Kx-xoH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Wr0-Ii-Caq"/>
+                            <constraint firstItem="hPS-2R-PN0" firstAttribute="top" secondItem="Dwn-Bp-MzQ" secondAttribute="bottom" constant="30" id="bUQ-C4-srF"/>
+                            <constraint firstItem="Dwn-Bp-MzQ" firstAttribute="top" secondItem="Yxq-Kx-xoH" secondAttribute="bottom" constant="30" id="cI9-7c-Pdi"/>
+                            <constraint firstItem="XBm-HL-6IU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cm5-YN-nux"/>
+                            <constraint firstItem="EtS-fK-Sf5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/5" id="d2c-JU-R1W"/>
+                            <constraint firstItem="XBm-HL-6IU" firstAttribute="top" secondItem="kR9-6h-GJM" secondAttribute="bottom" constant="30" id="fel-2h-Xyc"/>
+                            <constraint firstItem="XBm-HL-6IU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/5" id="gC6-Dw-T3u"/>
+                            <constraint firstItem="hPS-2R-PN0" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/5" identifier="1000" id="mVm-0n-HYy"/>
+                            <constraint firstItem="hPS-2R-PN0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/5" id="sM1-a1-yZm"/>
+                            <constraint firstItem="Yxq-Kx-xoH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/5" identifier="1000" id="sfg-Mg-zyc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

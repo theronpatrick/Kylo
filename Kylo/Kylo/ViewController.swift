@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 
     @IBAction func onButtonTouch(_ sender: Any) {
         print("Touchy")
-        var tag = (sender as AnyObject).tag
+        let tag = (sender as AnyObject).tag
         print((sender as AnyObject).tag)
         
         var url = Bundle.main.url(forResource: "kick1", withExtension: "wav")!
