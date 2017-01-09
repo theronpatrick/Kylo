@@ -14,8 +14,12 @@
 		E20ED1001E1F3D62008FE828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20ED0FE1E1F3D62008FE828 /* LaunchScreen.storyboard */; };
 		E20ED10B1E1F3D62008FE828 /* kyloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20ED10A1E1F3D62008FE828 /* kyloTests.swift */; };
 		E20ED1161E1F3D62008FE828 /* kyloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20ED1151E1F3D62008FE828 /* kyloUITests.swift */; };
-		E20ED1241E1F40AF008FE828 /* kick1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E20ED1231E1F40AF008FE828 /* kick1.wav */; };
-		E20ED1261E1F4192008FE828 /* rip 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E20ED1251E1F4192008FE828 /* rip 1.wav */; };
+		E27319811E21B53700B9403D /* bass 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E273197B1E21B53700B9403D /* bass 1.wav */; };
+		E27319821E21B53700B9403D /* bass 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = E273197C1E21B53700B9403D /* bass 2.wav */; };
+		E27319831E21B53700B9403D /* kick1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E273197D1E21B53700B9403D /* kick1.wav */; };
+		E27319841E21B53700B9403D /* rip 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E273197E1E21B53700B9403D /* rip 1.wav */; };
+		E27319851E21B53700B9403D /* shake 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E273197F1E21B53700B9403D /* shake 1.wav */; };
+		E27319861E21B53700B9403D /* snare 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E27319801E21B53700B9403D /* snare 1.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +53,12 @@
 		E20ED1111E1F3D62008FE828 /* kyloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kyloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20ED1151E1F3D62008FE828 /* kyloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kyloUITests.swift; sourceTree = "<group>"; };
 		E20ED1171E1F3D62008FE828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E20ED1231E1F40AF008FE828 /* kick1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick1.wav; sourceTree = "<group>"; };
-		E20ED1251E1F4192008FE828 /* rip 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "rip 1.wav"; path = "../rip 1.wav"; sourceTree = "<group>"; };
+		E273197B1E21B53700B9403D /* bass 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "bass 1.wav"; sourceTree = "<group>"; };
+		E273197C1E21B53700B9403D /* bass 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "bass 2.wav"; sourceTree = "<group>"; };
+		E273197D1E21B53700B9403D /* kick1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick1.wav; sourceTree = "<group>"; };
+		E273197E1E21B53700B9403D /* rip 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "rip 1.wav"; sourceTree = "<group>"; };
+		E273197F1E21B53700B9403D /* shake 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "shake 1.wav"; sourceTree = "<group>"; };
+		E27319801E21B53700B9403D /* snare 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "snare 1.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,7 @@
 		E20ED0F41E1F3D62008FE828 /* kylo */ = {
 			isa = PBXGroup;
 			children = (
-				E20ED1251E1F4192008FE828 /* rip 1.wav */,
-				E20ED1231E1F40AF008FE828 /* kick1.wav */,
+				E273197A1E21B51F00B9403D /* sounds */,
 				E20ED0F51E1F3D62008FE828 /* AppDelegate.swift */,
 				E20ED0F71E1F3D62008FE828 /* ViewController.swift */,
 				E20ED0F91E1F3D62008FE828 /* Main.storyboard */,
@@ -129,6 +136,19 @@
 				E20ED1171E1F3D62008FE828 /* Info.plist */,
 			);
 			path = kyloUITests;
+			sourceTree = "<group>";
+		};
+		E273197A1E21B51F00B9403D /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E273197B1E21B53700B9403D /* bass 1.wav */,
+				E273197C1E21B53700B9403D /* bass 2.wav */,
+				E273197D1E21B53700B9403D /* kick1.wav */,
+				E273197E1E21B53700B9403D /* rip 1.wav */,
+				E273197F1E21B53700B9403D /* shake 1.wav */,
+				E27319801E21B53700B9403D /* snare 1.wav */,
+			);
+			name = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,11 +261,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E20ED1261E1F4192008FE828 /* rip 1.wav in Resources */,
-				E20ED1241E1F40AF008FE828 /* kick1.wav in Resources */,
+				E27319811E21B53700B9403D /* bass 1.wav in Resources */,
 				E20ED1001E1F3D62008FE828 /* LaunchScreen.storyboard in Resources */,
 				E20ED0FD1E1F3D62008FE828 /* Assets.xcassets in Resources */,
+				E27319841E21B53700B9403D /* rip 1.wav in Resources */,
+				E27319851E21B53700B9403D /* shake 1.wav in Resources */,
+				E27319821E21B53700B9403D /* bass 2.wav in Resources */,
+				E27319831E21B53700B9403D /* kick1.wav in Resources */,
 				E20ED0FB1E1F3D62008FE828 /* Main.storyboard in Resources */,
+				E27319861E21B53700B9403D /* snare 1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,16 +23,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
-    @IBAction func onButtonTouch(_ sender: Any) {
+    @IBAction func onButtonTouch2(_ sender: Any) {
         print("Touchy")
+        
+        /*
+        
         let tag = (sender as AnyObject).tag
         print((sender as AnyObject).tag)
         
         var url = Bundle.main.url(forResource: "kick1", withExtension: "wav")!
         
         if (tag == 1) {
-          url = Bundle.main.url(forResource: "rip 1", withExtension: "wav")!
+            url = Bundle.main.url(forResource: "rip 1", withExtension: "wav")!
         }
         
         
@@ -45,6 +47,20 @@ class ViewController: UIViewController {
         } catch let error as NSError {
             print(error.description)
         }
+        */
     }
+    
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        
+    }
+
+    @IBAction func canIconnect(_ sender: AnyObject) {
+        print("do thing")
+    }
+    
+    @IBAction func touchdownlel(_ sender: AnyObject) {
+        print("anotherone")
+    }
+    
 }
 
