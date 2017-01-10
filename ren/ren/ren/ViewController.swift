@@ -22,10 +22,13 @@ internal var playerArray = [AVAudioPlayer]()
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var firstButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // Load audio players
         for i in 0...audioArray.count - 1 {
             let newPlayer: AVAudioPlayer!;
             let url = Bundle.main.url(forResource: audioArray[i], withExtension: "wav")!
@@ -40,6 +43,8 @@ class ViewController: UIViewController {
             }
             
         }
+
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,7 +67,6 @@ class ViewController: UIViewController {
         
     }
     @IBAction func padTouchUp(_ sender: AnyObject) {
-        print("cool")
         (sender as! UIButton).backgroundColor = UIColor(netHex: 0x96A6B8)
     }
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E2375DE01E24FE440070534F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375DDF1E24FE440070534F /* ColorExtension.swift */; };
+		E25F53371E25A2F900CCECDE /* sounds.plist in Resources */ = {isa = PBXBuildFile; fileRef = E25F53361E25A2F900CCECDE /* sounds.plist */; };
+		E25F53391E25A5D800CCECDE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F53381E25A5D800CCECDE /* Home.swift */; };
 		E269C6F01E233AE4003E7FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269C6EF1E233AE4003E7FA3 /* AppDelegate.swift */; };
 		E269C6F21E233AE4003E7FA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269C6F11E233AE4003E7FA3 /* ViewController.swift */; };
 		E269C6F51E233AE4003E7FA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E269C6F31E233AE4003E7FA3 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		E2375DDF1E24FE440070534F /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		E25F53361E25A2F900CCECDE /* sounds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sounds.plist; path = ../sounds.plist; sourceTree = "<group>"; };
+		E25F53381E25A5D800CCECDE /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E269C6EC1E233AE4003E7FA3 /* ren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E269C6EF1E233AE4003E7FA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E269C6F11E233AE4003E7FA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,10 +118,12 @@
 				E269C71D1E233F16003E7FA3 /* sounds */,
 				E269C6EF1E233AE4003E7FA3 /* AppDelegate.swift */,
 				E269C6F11E233AE4003E7FA3 /* ViewController.swift */,
+				E25F53381E25A5D800CCECDE /* Home.swift */,
 				E269C6F31E233AE4003E7FA3 /* Main.storyboard */,
 				E269C6F61E233AE4003E7FA3 /* Assets.xcassets */,
 				E269C6F81E233AE4003E7FA3 /* LaunchScreen.storyboard */,
 				E269C6FB1E233AE4003E7FA3 /* Info.plist */,
+				E25F53361E25A2F900CCECDE /* sounds.plist */,
 				E2375DDF1E24FE440070534F /* ColorExtension.swift */,
 			);
 			path = ren;
@@ -268,6 +274,7 @@
 				E269C6FA1E233AE4003E7FA3 /* LaunchScreen.storyboard in Resources */,
 				E269C6F71E233AE4003E7FA3 /* Assets.xcassets in Resources */,
 				E269C7271E233F27003E7FA3 /* rip 1.wav in Resources */,
+				E25F53371E25A2F900CCECDE /* sounds.plist in Resources */,
 				E269C7281E233F27003E7FA3 /* shake 1.wav in Resources */,
 				E269C7251E233F27003E7FA3 /* bass 2.wav in Resources */,
 				E269C7261E233F27003E7FA3 /* kick1.wav in Resources */,
@@ -299,6 +306,7 @@
 			files = (
 				E2375DE01E24FE440070534F /* ColorExtension.swift in Sources */,
 				E269C6F21E233AE4003E7FA3 /* ViewController.swift in Sources */,
+				E25F53391E25A5D800CCECDE /* Home.swift in Sources */,
 				E269C6F01E233AE4003E7FA3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
