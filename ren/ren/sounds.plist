@@ -2,18 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>SoundPacks</key>
-	<array>
-		<string></string>
-	</array>
-	<key>Sound Pack 2</key>
-	<array>
-		<string>shake 1</string>
-	</array>
-	<key>Sound Pack 1</key>
+	<key>SoundPackName</key>
+	<string>Default One</string>
+	<key>SoundPack</key>
 	<array>
 		<string>bass 1</string>
 		<string>bass 2</string>
+		<string>snare 1</string>
+		<string>shake 1</string>
+		<string>rip 1</string>
 		<string>kick1</string>
 	</array>
 </dict>

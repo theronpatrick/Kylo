@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E2375DE01E24FE440070534F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2375DDF1E24FE440070534F /* ColorExtension.swift */; };
 		E25F53371E25A2F900CCECDE /* sounds.plist in Resources */ = {isa = PBXBuildFile; fileRef = E25F53361E25A2F900CCECDE /* sounds.plist */; };
-		E25F53391E25A5D800CCECDE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F53381E25A5D800CCECDE /* Home.swift */; };
 		E269C6F01E233AE4003E7FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269C6EF1E233AE4003E7FA3 /* AppDelegate.swift */; };
 		E269C6F21E233AE4003E7FA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269C6F11E233AE4003E7FA3 /* ViewController.swift */; };
 		E269C6F51E233AE4003E7FA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E269C6F31E233AE4003E7FA3 /* Main.storyboard */; };
@@ -23,6 +22,7 @@
 		E269C7271E233F27003E7FA3 /* rip 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E269C7211E233F27003E7FA3 /* rip 1.wav */; };
 		E269C7281E233F27003E7FA3 /* shake 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E269C7221E233F27003E7FA3 /* shake 1.wav */; };
 		E269C7291E233F27003E7FA3 /* snare 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E269C7231E233F27003E7FA3 /* snare 1.wav */; };
+		E29F6A851E2A7BB2009A7C55 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F6A841E2A7BB2009A7C55 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,6 @@
 /* Begin PBXFileReference section */
 		E2375DDF1E24FE440070534F /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		E25F53361E25A2F900CCECDE /* sounds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sounds.plist; path = ../sounds.plist; sourceTree = "<group>"; };
-		E25F53381E25A5D800CCECDE /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E269C6EC1E233AE4003E7FA3 /* ren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E269C6EF1E233AE4003E7FA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E269C6F11E233AE4003E7FA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		E269C7211E233F27003E7FA3 /* rip 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "rip 1.wav"; sourceTree = "<group>"; };
 		E269C7221E233F27003E7FA3 /* shake 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "shake 1.wav"; sourceTree = "<group>"; };
 		E269C7231E233F27003E7FA3 /* snare 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "snare 1.wav"; sourceTree = "<group>"; };
+		E29F6A841E2A7BB2009A7C55 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +118,10 @@
 				E269C71D1E233F16003E7FA3 /* sounds */,
 				E269C6EF1E233AE4003E7FA3 /* AppDelegate.swift */,
 				E269C6F11E233AE4003E7FA3 /* ViewController.swift */,
-				E25F53381E25A5D800CCECDE /* Home.swift */,
+				E29F6A841E2A7BB2009A7C55 /* HomeController.swift */,
 				E269C6F31E233AE4003E7FA3 /* Main.storyboard */,
-				E269C6F61E233AE4003E7FA3 /* Assets.xcassets */,
 				E269C6F81E233AE4003E7FA3 /* LaunchScreen.storyboard */,
+				E269C6F61E233AE4003E7FA3 /* Assets.xcassets */,
 				E269C6FB1E233AE4003E7FA3 /* Info.plist */,
 				E25F53361E25A2F900CCECDE /* sounds.plist */,
 				E2375DDF1E24FE440070534F /* ColorExtension.swift */,
@@ -306,8 +306,8 @@
 			files = (
 				E2375DE01E24FE440070534F /* ColorExtension.swift in Sources */,
 				E269C6F21E233AE4003E7FA3 /* ViewController.swift in Sources */,
-				E25F53391E25A5D800CCECDE /* Home.swift in Sources */,
 				E269C6F01E233AE4003E7FA3 /* AppDelegate.swift in Sources */,
+				E29F6A851E2A7BB2009A7C55 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XCKX87M3JM;
 				INFOPLIST_FILE = ren/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = taetro.ren;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,6 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XCKX87M3JM;
 				INFOPLIST_FILE = ren/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = taetro.ren;
 				PRODUCT_NAME = "$(TARGET_NAME)";

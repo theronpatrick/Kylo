@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+/*
 internal var audioArray: Array = [
     "bass 1",
     "bass 2",
@@ -17,6 +18,9 @@ internal var audioArray: Array = [
     "shake 1",
     "snare 1"
 ]
+ */
+
+internal var audioArray = Array<String>();
 
 internal var playerArray = [AVAudioPlayer]()
 
@@ -27,6 +31,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        audioArray = readPropertyList();
         
         // Load audio players
         for i in 0...audioArray.count - 1 {
@@ -45,6 +51,24 @@ class ViewController: UIViewController {
         }
 
         
+    }
+    
+    func readPropertyList() -> Array<String> {
+        
+        var myDict: NSDictionary?
+        if let path = Bundle.main.path(forResource: "sounds", ofType: "plist") {
+            myDict = NSDictionary(contentsOfFile: path)
+        }
+        if let dict = myDict {
+            // Use your dict here
+            print ("dict is ")
+            
+            let itemsArray: Array? = dict.object(forKey: "SoundPack") as? Array<String>;
+            
+            return itemsArray!
+        } else {
+            return [];
+        }
     }
 
     override func didReceiveMemoryWarning() {

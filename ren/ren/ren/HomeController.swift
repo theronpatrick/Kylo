@@ -1,27 +1,25 @@
 //
-//  Home.swift
+//  ViewController.swift
 //  ren
 //
-//  Created by Theron Patrick on 1/10/17.
+//  Created by Theron Patrick on 1/8/17.
 //  Copyright © 2017 Theron Patrick. All rights reserved.
 //
 
 import UIKit
-import AVFoundation
 
+class HomeController: UIViewController {
 
-class Home: UINavigationController {
+    @IBOutlet weak var subtitle: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        print("things happened")
-        
-        readPropertyList()
+        let title = readPropertyList()
+        subtitle.setTitle(title,for: .normal)
     }
     
-    func readPropertyList(){
+    func readPropertyList() -> String {
         
         var myDict: NSDictionary?
         if let path = Bundle.main.path(forResource: "sounds", ofType: "plist") {
@@ -30,11 +28,12 @@ class Home: UINavigationController {
         if let dict = myDict {
             // Use your dict here
             print ("dict is ")
-            print(dict)
+            
+            return (dict.object(forKey: "SoundPackName") as? String)!;
+            
+        } else {
+            return "";
         }
     }
-
-    
-    
 }
 
