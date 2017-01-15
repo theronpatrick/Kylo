@@ -23,25 +23,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pk6-vp-Tig">
-                                <rect key="frame" x="16" y="154" width="343" height="67"/>
+                                <rect key="frame" x="16" y="174" width="343" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="TAETRO">
                                     <color key="titleColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqf-Ag-ATN">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Dqf-Ag-ATN" firstAttribute="centerX" secondItem="Pk6-vp-Tig" secondAttribute="centerX" id="5yq-nc-BtW"/>
-                            <constraint firstItem="Dqf-Ag-ATN" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="8oJ-KF-ue4"/>
-                            <constraint firstItem="Dqf-Ag-ATN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="9be-Gp-cge"/>
                             <constraint firstItem="Pk6-vp-Tig" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="JtW-Lf-5uU"/>
+                            <constraint firstItem="Pk6-vp-Tig" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="154" id="Q1A-e4-42F"/>
                             <constraint firstItem="Pk6-vp-Tig" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="kre-Wb-9zL"/>
-                            <constraint firstItem="Pk6-vp-Tig" firstAttribute="top" secondItem="Dqf-Ag-ATN" secondAttribute="bottom" constant="110" id="ubo-AJ-0xx"/>
                         </constraints>
                     </view>
                 </viewController>

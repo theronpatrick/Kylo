@@ -9,30 +9,21 @@
 import UIKit
 import AVFoundation
 
-/*
-internal var audioArray: Array = [
-    "bass 1",
-    "bass 2",
-    "kick1",
-    "rip 1",
-    "shake 1",
-    "snare 1"
-]
- */
-
-internal var audioArray = Array<String>();
-
-internal var playerArray = [AVAudioPlayer]()
 
 class ViewController: UIViewController {
+    @IBOutlet var padButtons: [UIButton]!
 
     @IBOutlet weak var firstButton: UIButton!
+
+    var playerArray = [AVAudioPlayer]()
+    var audioArray = Array<String>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        audioArray = readPropertyList();
+        audioArray = readPropertyList()
+        playerArray = []
         
         // Load audio players
         for i in 0...audioArray.count - 1 {
@@ -49,9 +40,19 @@ class ViewController: UIViewController {
             }
             
         }
+        
+        
+        // Disable buttons if we don't have sounds for them 
+        for padButton in padButtons {
+            if (padButton.tag > audioArray.count) {
+                padButton.isUserInteractionEnabled = false
+                padButton.alpha = 0.2
+            }
+        }
 
         
     }
+    
     
     func readPropertyList() -> Array<String> {
         
@@ -60,8 +61,6 @@ class ViewController: UIViewController {
             myDict = NSDictionary(contentsOfFile: path)
         }
         if let dict = myDict {
-            // Use your dict here
-            print ("dict is ")
             
             let itemsArray: Array? = dict.object(forKey: "SoundPack") as? Array<String>;
             

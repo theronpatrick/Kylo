@@ -10,15 +10,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Navigation Controller-->
         <scene sceneID="WeO-Bm-1Nq">
             <objects>
-                <navigationController id="vin-HS-zNN" customClass="Home" customModule="ren" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="vin-HS-zNN" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="pla-hN-4aW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.035294117649999998" green="0.031372549020000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="5KS-W5-sNA" kind="relationship" relationship="rootViewController" id="boP-Xp-RBg"/>
@@ -46,23 +48,22 @@
                                 <state key="normal" title="TAETRO">
                                     <color key="titleColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="GDu-Ex-Hqn"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iU-Bl-THg">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iU-Bl-THg">
                                 <rect key="frame" x="16" y="215" width="343" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="9mY-DM-dBw"/>
-                                </connections>
                             </button>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="youtube-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="5GC-oO-tQy">
+                                <rect key="frame" x="67" y="436" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Biq-JJ-Dce" firstAttribute="leading" secondItem="2g5-T3-vT8" secondAttribute="leadingMargin" id="1X0-bf-cMG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Biq-JJ-Dce" secondAttribute="trailing" id="Uwb-pG-ZwF"/>
@@ -72,6 +73,9 @@
                     <navigationItem key="navigationItem" id="Uam-LS-4Rc"/>
                     <connections>
                         <outlet property="subtitle" destination="7iU-Bl-THg" id="MsB-dD-JCN"/>
+                        <outlet property="titleButton" destination="Biq-JJ-Dce" id="rEB-gZ-DUL"/>
+                        <outlet property="youtubeImage" destination="5GC-oO-tQy" id="TbW-Z0-2z4"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="padSegue" id="Ijk-r8-grA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aa1-xv-S6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -94,10 +98,10 @@
                                 <rect key="frame" x="5" y="5" width="365" height="593"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BRv-Td-0As">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="145"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="144.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liV-04-0Zs">
-                                                <rect key="frame" x="0.0" y="0.0" width="118" height="145"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="144.5"/>
                                                 <color key="backgroundColor" red="0.58823529411764708" green="0.65098039215686276" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="IOq-NG-FK7"/>
@@ -106,7 +110,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbK-EH-IBf">
-                                                <rect key="frame" x="123" y="0.0" width="119" height="145"/>
+                                                <rect key="frame" x="123.5" y="0.0" width="118" height="144.5"/>
                                                 <color key="backgroundColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="vJF-M9-1aB"/>
@@ -115,7 +119,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0k-gL-7Bz">
-                                                <rect key="frame" x="247" y="0.0" width="118" height="145"/>
+                                                <rect key="frame" x="246.5" y="0.0" width="118.5" height="144.5"/>
                                                 <color key="backgroundColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="zYd-M7-gfq"/>
@@ -126,10 +130,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="McM-2V-FYh">
-                                        <rect key="frame" x="0.0" y="150" width="365" height="144"/>
+                                        <rect key="frame" x="0.0" y="149.5" width="365" height="144.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh4-zb-0z1">
-                                                <rect key="frame" x="0.0" y="0.0" width="118" height="144"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="144.5"/>
                                                 <color key="backgroundColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="eYc-yH-MKI"/>
@@ -138,7 +142,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhH-QY-gm4">
-                                                <rect key="frame" x="123" y="0.0" width="119" height="144"/>
+                                                <rect key="frame" x="123.5" y="0.0" width="118" height="144.5"/>
                                                 <color key="backgroundColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="IUD-CB-89x"/>
@@ -147,7 +151,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbu-yQ-MW5">
-                                                <rect key="frame" x="247" y="0.0" width="118" height="144"/>
+                                                <rect key="frame" x="246.5" y="0.0" width="118.5" height="144.5"/>
                                                 <color key="backgroundColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="fFR-BM-eF3"/>
@@ -158,10 +162,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yfZ-Bn-DRb">
-                                        <rect key="frame" x="0.0" y="299" width="365" height="145"/>
+                                        <rect key="frame" x="0.0" y="299" width="365" height="144.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6r-xA-UR9">
-                                                <rect key="frame" x="0.0" y="0.0" width="118" height="145"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="144.5"/>
                                                 <color key="backgroundColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="oXy-8v-2Oa"/>
@@ -170,7 +174,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqg-HY-jT7">
-                                                <rect key="frame" x="123" y="0.0" width="119" height="145"/>
+                                                <rect key="frame" x="123.5" y="0.0" width="118" height="144.5"/>
                                                 <color key="backgroundColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="50d-02-7SO"/>
@@ -179,7 +183,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oe8-go-V4a">
-                                                <rect key="frame" x="247" y="0.0" width="118" height="145"/>
+                                                <rect key="frame" x="246.5" y="0.0" width="118.5" height="144.5"/>
                                                 <color key="backgroundColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Cee-wo-Nil"/>
@@ -190,10 +194,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mrZ-7M-a52">
-                                        <rect key="frame" x="0.0" y="449" width="365" height="144"/>
+                                        <rect key="frame" x="0.0" y="448.5" width="365" height="144.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6K-A6-VQd">
-                                                <rect key="frame" x="0.0" y="0.0" width="118" height="144"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="144.5"/>
                                                 <color key="backgroundColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="VAA-4m-Usr"/>
@@ -202,7 +206,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TP3-qe-DxL">
-                                                <rect key="frame" x="123" y="0.0" width="119" height="144"/>
+                                                <rect key="frame" x="123.5" y="0.0" width="118" height="144.5"/>
                                                 <color key="backgroundColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="SHb-42-ATC"/>
@@ -211,8 +215,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPs-nx-HsB">
-                                                <rect key="frame" x="247" y="0.0" width="118" height="144"/>
-                                                <color key="backgroundColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="246.5" y="0.0" width="118.5" height="144.5"/>
+                                                <color key="backgroundColor" red="0.52156862745098043" green="0.58431372549019611" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="yng-jC-3Ll"/>
                                                     <action selector="padTouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EoP-W1-wSJ"/>
@@ -234,6 +238,18 @@
                     </view>
                     <connections>
                         <outlet property="firstButton" destination="liV-04-0Zs" id="Nsw-yx-m9c"/>
+                        <outletCollection property="padButtons" destination="liV-04-0Zs" collectionClass="NSMutableArray" id="DBW-1S-3IN"/>
+                        <outletCollection property="padButtons" destination="K0k-gL-7Bz" collectionClass="NSMutableArray" id="lAC-Lt-zPM"/>
+                        <outletCollection property="padButtons" destination="xhH-QY-gm4" collectionClass="NSMutableArray" id="mxB-Wd-kDC"/>
+                        <outletCollection property="padButtons" destination="QbK-EH-IBf" collectionClass="NSMutableArray" id="7n6-AC-7DI"/>
+                        <outletCollection property="padButtons" destination="gh4-zb-0z1" collectionClass="NSMutableArray" id="Pv5-od-bJg"/>
+                        <outletCollection property="padButtons" destination="Vbu-yQ-MW5" collectionClass="NSMutableArray" id="n2K-kW-vS5"/>
+                        <outletCollection property="padButtons" destination="O6r-xA-UR9" collectionClass="NSMutableArray" id="6B9-UQ-1Tq"/>
+                        <outletCollection property="padButtons" destination="Tqg-HY-jT7" collectionClass="NSMutableArray" id="mkb-pT-6mK"/>
+                        <outletCollection property="padButtons" destination="Oe8-go-V4a" collectionClass="NSMutableArray" id="WDD-Rp-DDr"/>
+                        <outletCollection property="padButtons" destination="s6K-A6-VQd" collectionClass="NSMutableArray" id="vGG-gg-Ym1"/>
+                        <outletCollection property="padButtons" destination="TP3-qe-DxL" collectionClass="NSMutableArray" id="8Nx-xx-gKt"/>
+                        <outletCollection property="padButtons" destination="JPs-nx-HsB" collectionClass="NSMutableArray" id="2un-t7-c9b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -241,7 +257,7 @@
             <point key="canvasLocation" x="201" y="-78"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="GDu-Ex-Hqn"/>
-    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="youtube-logo.png" width="773" height="481"/>
+    </resources>
 </document>
