@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pk6-vp-Tig">
-                                <rect key="frame" x="16" y="178" width="343" height="67"/>
+                                <rect key="frame" x="16" y="174" width="343" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="TAETRO">
                                     <color key="titleColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -33,7 +33,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Pk6-vp-Tig" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="JtW-Lf-5uU"/>
-                            <constraint firstItem="Pk6-vp-Tig" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="158" id="Q1A-e4-42F"/>
+                            <constraint firstItem="Pk6-vp-Tig" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="154" id="Q1A-e4-42F"/>
                             <constraint firstItem="Pk6-vp-Tig" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="kre-Wb-9zL"/>
                         </constraints>
                     </view>

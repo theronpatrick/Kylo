@@ -216,7 +216,7 @@
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPs-nx-HsB">
                                                 <rect key="frame" x="246.5" y="0.0" width="118.5" height="144.5"/>
-                                                <color key="backgroundColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.52156862745098043" green="0.58431372549019611" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <action selector="padDown:" destination="BYZ-38-t0r" eventType="touchDown" id="yng-jC-3Ll"/>
                                                     <action selector="padTouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EoP-W1-wSJ"/>
@@ -238,6 +238,18 @@
                     </view>
                     <connections>
                         <outlet property="firstButton" destination="liV-04-0Zs" id="Nsw-yx-m9c"/>
+                        <outletCollection property="padButtons" destination="liV-04-0Zs" collectionClass="NSMutableArray" id="DBW-1S-3IN"/>
+                        <outletCollection property="padButtons" destination="K0k-gL-7Bz" collectionClass="NSMutableArray" id="lAC-Lt-zPM"/>
+                        <outletCollection property="padButtons" destination="xhH-QY-gm4" collectionClass="NSMutableArray" id="mxB-Wd-kDC"/>
+                        <outletCollection property="padButtons" destination="QbK-EH-IBf" collectionClass="NSMutableArray" id="7n6-AC-7DI"/>
+                        <outletCollection property="padButtons" destination="gh4-zb-0z1" collectionClass="NSMutableArray" id="Pv5-od-bJg"/>
+                        <outletCollection property="padButtons" destination="Vbu-yQ-MW5" collectionClass="NSMutableArray" id="n2K-kW-vS5"/>
+                        <outletCollection property="padButtons" destination="O6r-xA-UR9" collectionClass="NSMutableArray" id="6B9-UQ-1Tq"/>
+                        <outletCollection property="padButtons" destination="Tqg-HY-jT7" collectionClass="NSMutableArray" id="mkb-pT-6mK"/>
+                        <outletCollection property="padButtons" destination="Oe8-go-V4a" collectionClass="NSMutableArray" id="WDD-Rp-DDr"/>
+                        <outletCollection property="padButtons" destination="s6K-A6-VQd" collectionClass="NSMutableArray" id="vGG-gg-Ym1"/>
+                        <outletCollection property="padButtons" destination="TP3-qe-DxL" collectionClass="NSMutableArray" id="8Nx-xx-gKt"/>
+                        <outletCollection property="padButtons" destination="JPs-nx-HsB" collectionClass="NSMutableArray" id="2un-t7-c9b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
