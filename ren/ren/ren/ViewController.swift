@@ -79,7 +79,7 @@ class ViewController: UIViewController {
         // Tag starts at 1 because 0 indicates no tag assigned
         let index = sender.tag - 1
         
-        (sender as! UIButton).backgroundColor = UIColor(red:1.00, green:0.99, blue:0.98, alpha:1.0)
+        (sender as! UIButton).backgroundColor = UIColor(netHex: 0xFF5554)
         
         if (index > -1 && index < audioArray.count) {
             let player = playerArray[index];
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
         
     }
     @IBAction func padTouchUp(_ sender: AnyObject) {
-        (sender as! UIButton).backgroundColor = UIColor(netHex: 0x96A6B8)
+        (sender as! UIButton).backgroundColor = UIColor(netHex: 0xE54D50)
     }
 
 }
