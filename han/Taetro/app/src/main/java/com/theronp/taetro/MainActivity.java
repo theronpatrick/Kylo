@@ -1,5 +1,6 @@
 package com.theronp.taetro;
 
+import android.media.MediaPlayer;
 import android.support.v4.view.MotionEventCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.snare1);
+
         View myButton = findViewById(R.id.button);
         myButton.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View v, MotionEvent event) {
@@ -26,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 switch(action) {
                     case (MotionEvent.ACTION_DOWN) :
                         Log.d(DEBUG_TAG,"Action was DOWN");
-                        playSound();
+                        playSound(mp);
                         return true;
                     case (MotionEvent.ACTION_UP) :
                         Log.d(DEBUG_TAG,"Action was UP");
@@ -45,8 +48,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void playSound() {
+    public void playSound(MediaPlayer mp) {
         Log.d("test","play sound");
+        mp.start();
     }
 
     public void buttonClick(View view) {
