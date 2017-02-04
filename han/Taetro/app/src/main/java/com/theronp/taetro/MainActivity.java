@@ -9,14 +9,17 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.snare1);
+
 
         View myButton = findViewById(R.id.button);
         myButton.setOnTouchListener(new View.OnTouchListener() {
@@ -29,7 +32,11 @@ public class MainActivity extends AppCompatActivity {
                 switch(action) {
                     case (MotionEvent.ACTION_DOWN) :
                         Log.d(DEBUG_TAG,"Action was DOWN");
-                        playSound(mp);
+                        try {
+                            playSound(mp);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                         return true;
                     case (MotionEvent.ACTION_UP) :
                         Log.d(DEBUG_TAG,"Action was UP");
@@ -48,9 +55,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void playSound(MediaPlayer mp) {
+    public void playSound(MediaPlayer mp) throws IOException {
         Log.d("test","play sound");
-        mp.start();
+
+        if (mp.isPlaying()) {
+            mp.stop();
+            mp.prepare();
+            mp.start();
+        } else {
+            mp.start();
+        }
+
     }
 
     public void buttonClick(View view) {
