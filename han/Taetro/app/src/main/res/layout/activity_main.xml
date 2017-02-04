@@ -1,23 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.theronp.taetro.MainActivity">
+    tools:context="com.theronp.taetro.MainActivity"
+    android:background="#000000">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/AppTheme.PopupOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:layout_widthPercent="100%"
+        app:title="Back" />
 
     <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:elevation="0dp"
-        android:onClick="buttonClick" />
-</RelativeLayout>
+        android:text="Button1"
+        android:id="@+id/button1"
+        android:onClick="buttonClick"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="8%"
+        app:layout_marginLeftPercent="4%"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="#DB363F" />
+
+    <Button
+        android:text="Button2"
+        android:id="@+id/button2"
+        android:onClick="buttonClick"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginLeftPercent="35%"
+        />
+
+    <Button
+        android:text="Button3"
+        android:id="@+id/button3"
+        android:onClick="buttonClick"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="2%"
+        app:layout_marginLeftPercent="66%"
+        />
+
+    <Button
+        android:text="Button4"
+        android:id="@+id/button4"
+        android:onClick="buttonClick"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="26%"
+        app:layout_marginLeftPercent="4%"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="#DB363F" />
+
+    <Button
+        android:text="Button5"
+        android:id="@+id/button5"
+        android:onClick="buttonClick"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="26%"
+        app:layout_marginLeftPercent="35%"
+        />
+
+    <Button
+        android:text="Button6"
+        android:id="@+id/button6"
+        android:onClick="buttonClick"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="26%"
+        app:layout_marginLeftPercent="66%"
+        />
+
+
+    <Button
+        android:text="Button7"
+        android:id="@+id/button7"
+        android:onClick="buttonClick"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="50%"
+        app:layout_marginLeftPercent="4%"
+        />
+
+    <Button
+        android:text="Button8"
+        android:id="@+id/button8"
+        android:onClick="buttonClick"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="50%"
+        app:layout_marginLeftPercent="35%"
+        />
+
+    <Button
+        android:text="Button9"
+        android:id="@+id/button9"
+        android:onClick="buttonClick"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="50%"
+        app:layout_marginLeftPercent="66%"
+        />
+
+    <Button
+        android:text="Button10"
+        android:id="@+id/button10"
+        android:onClick="buttonClick"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="74%"
+        app:layout_marginLeftPercent="4%"
+        />
+
+    <Button
+        android:text="Button11"
+        android:id="@+id/button11"
+        android:onClick="buttonClick"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="74%"
+        app:layout_marginLeftPercent="35%"
+        />
+
+    <Button
+        android:text="Button12"
+        android:id="@+id/button12"
+        android:onClick="buttonClick"
+        app:layout_widthPercent="30%"
+        app:layout_heightPercent="24%"
+        app:layout_marginTopPercent="74%"
+        app:layout_marginLeftPercent="66%"
+        />
+
+</android.support.percent.PercentRelativeLayout>
