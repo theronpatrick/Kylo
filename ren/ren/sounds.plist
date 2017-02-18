@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>SoundPackName</key>
-	<string>SOUNDPACK II</string>
+	<string>VACATION PACK</string>
 	<key>SoundPack</key>
 	<array>
-		<string>pad 2</string>
-		<string>pad 3</string>
-		<string>pad 4</string>
-		<string>pad 1</string>
-		<string>glass 1</string>
-		<string>glass 2</string>
-		<string>bucket 1</string>
-		<string>glass 4</string>
-		<string>glass 3</string>
-		<string>kick 1</string>
-		<string>toaster 1</string>
-		<string>bucket 2</string>
+		<string>s1</string>
+		<string>s2</string>
+		<string>s3</string>
+		<string>s4</string>
+		<string>s5</string>
+		<string>s6</string>
+		<string>s7</string>
+		<string>s8</string>
+		<string>s9</string>
+		<string>s10</string>
+		<string>s11</string>
+		<string>s12</string>
 	</array>
 </dict>
 </plist>

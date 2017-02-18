@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 public class launch extends AppCompatActivity {
 
@@ -21,7 +22,8 @@ public class launch extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         // Go to app
-        View myButton = findViewById(R.id.soundpackText);
+        TextView myButton = (TextView) findViewById(R.id.soundpackText);
+        myButton.setText("VACATION PACK");
 
         myButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)

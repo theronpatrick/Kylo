@@ -54,18 +54,18 @@ public class MainActivity extends AppCompatActivity {
         final int streamIds[] = new int[12];
 
         // Load sounds into array
-        soundIds[0] = sp.load(this, R.raw.pad2, 1);
-        soundIds[1] = sp.load(this, R.raw.pad3, 1);
-        soundIds[2] = sp.load(this, R.raw.pad4, 1);
-        soundIds[3] = sp.load(this, R.raw.pad1, 1);
-        soundIds[4] = sp.load(this, R.raw.glass1, 1);
-        soundIds[5] = sp.load(this, R.raw.glass2, 1);
-        soundIds[6] = sp.load(this, R.raw.bucket1, 1);
-        soundIds[7] = sp.load(this, R.raw.glass4, 1);
-        soundIds[8] = sp.load(this, R.raw.glass3, 1);
-        soundIds[9] = sp.load(this, R.raw.kick1, 1);
-        soundIds[10] = sp.load(this, R.raw.toaster1, 1);
-        soundIds[11] = sp.load(this, R.raw.bucket2, 1);
+        soundIds[0] = sp.load(this, R.raw.s1, 1);
+        soundIds[1] = sp.load(this, R.raw.s2, 1);
+        soundIds[2] = sp.load(this, R.raw.s3, 1);
+        soundIds[3] = sp.load(this, R.raw.s4, 1);
+        soundIds[4] = sp.load(this, R.raw.s5, 1);
+        soundIds[5] = sp.load(this, R.raw.s6, 1);
+        soundIds[6] = sp.load(this, R.raw.s7, 1);
+        soundIds[7] = sp.load(this, R.raw.s8, 1);
+        soundIds[8] = sp.load(this, R.raw.s9, 1);
+        soundIds[9] = sp.load(this, R.raw.s10, 1);
+        soundIds[10] = sp.load(this, R.raw.s11, 1);
+        soundIds[11] = sp.load(this, R.raw.s12, 1);
 
         for (int i = 0; i < buttonArray.length; i++) {
 
