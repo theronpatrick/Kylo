@@ -13,132 +13,127 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        style="@style/AppTheme.PopupOverlay"
-        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:layout_widthPercent="100%"
         app:title="Back" />
 
     <Button
-        android:text="Button1"
         android:id="@+id/button1"
         android:onClick="buttonClick"
         app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
+        app:layout_heightPercent="22%"
         app:layout_marginTopPercent="8%"
         app:layout_marginLeftPercent="4%"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="#DB363F" />
+        style="@style/AppTheme.pad" />
 
     <Button
-        android:text="Button2"
         android:id="@+id/button2"
         android:onClick="buttonClick"
         app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
-        app:layout_marginTopPercent="2%"
+        app:layout_heightPercent="22%"
+        app:layout_marginTopPercent="8%"
         app:layout_marginLeftPercent="35%"
+        style="@style/AppTheme.pad"
         />
 
     <Button
-        android:text="Button3"
         android:id="@+id/button3"
         android:onClick="buttonClick"
         app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
-        app:layout_marginTopPercent="2%"
+        app:layout_heightPercent="22%"
+        app:layout_marginTopPercent="8%"
         app:layout_marginLeftPercent="66%"
+        style="@style/AppTheme.pad"
         />
 
     <Button
-        android:text="Button4"
         android:id="@+id/button4"
         android:onClick="buttonClick"
         app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
-        app:layout_marginTopPercent="26%"
+        app:layout_heightPercent="22%"
+        app:layout_marginTopPercent="31%"
         app:layout_marginLeftPercent="4%"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:background="#DB363F" />
+        style="@style/AppTheme.pad" />
 
     <Button
-        android:text="Button5"
         android:id="@+id/button5"
         android:onClick="buttonClick"
         app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
-        app:layout_marginTopPercent="26%"
+        app:layout_heightPercent="22%"
+        app:layout_marginTopPercent="31%"
         app:layout_marginLeftPercent="35%"
+        style="@style/AppTheme.pad"
         />
 
     <Button
-        android:text="Button6"
         android:id="@+id/button6"
         android:onClick="buttonClick"
         app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
-        app:layout_marginTopPercent="26%"
+        app:layout_heightPercent="22%"
+        app:layout_marginTopPercent="31%"
         app:layout_marginLeftPercent="66%"
+        style="@style/AppTheme.pad"
         />
 
 
     <Button
-        android:text="Button7"
         android:id="@+id/button7"
         android:onClick="buttonClick"
         app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
-        app:layout_marginTopPercent="50%"
+        app:layout_heightPercent="22%"
+        app:layout_marginTopPercent="54%"
         app:layout_marginLeftPercent="4%"
+        style="@style/AppTheme.pad"
         />
 
     <Button
-        android:text="Button8"
         android:id="@+id/button8"
         android:onClick="buttonClick"
         app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
-        app:layout_marginTopPercent="50%"
+        app:layout_heightPercent="22%"
+        app:layout_marginTopPercent="54%"
         app:layout_marginLeftPercent="35%"
+        style="@style/AppTheme.pad"
         />
 
     <Button
-        android:text="Button9"
         android:id="@+id/button9"
         android:onClick="buttonClick"
         app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
-        app:layout_marginTopPercent="50%"
+        app:layout_heightPercent="22%"
+        app:layout_marginTopPercent="54%"
         app:layout_marginLeftPercent="66%"
+        style="@style/AppTheme.pad"
         />
 
     <Button
-        android:text="Button10"
         android:id="@+id/button10"
         android:onClick="buttonClick"
         app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
-        app:layout_marginTopPercent="74%"
+        app:layout_heightPercent="22%"
+        app:layout_marginTopPercent="77%"
         app:layout_marginLeftPercent="4%"
+        style="@style/AppTheme.pad"
         />
 
     <Button
-        android:text="Button11"
         android:id="@+id/button11"
         android:onClick="buttonClick"
         app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
-        app:layout_marginTopPercent="74%"
+        app:layout_heightPercent="22%"
+        app:layout_marginTopPercent="77%"
         app:layout_marginLeftPercent="35%"
+        style="@style/AppTheme.pad"
         />
 
     <Button
-        android:text="Button12"
         android:id="@+id/button12"
         android:onClick="buttonClick"
         app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
-        app:layout_marginTopPercent="74%"
+        app:layout_heightPercent="22%"
+        app:layout_marginTopPercent="77%"
         app:layout_marginLeftPercent="66%"
+        style="@style/AppTheme.pad"
         />
 
 </android.support.percent.PercentRelativeLayout>
