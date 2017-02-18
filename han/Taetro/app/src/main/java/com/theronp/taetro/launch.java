@@ -1,6 +1,7 @@
 package com.theronp.taetro;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -18,16 +19,27 @@ public class launch extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        View myButton = findViewById(R.id.buttonLaunch);
+        // Go to app
+        View myButton = findViewById(R.id.soundpackText);
 
         myButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                Log.d("test","play sound");
                 Intent myintent = new Intent(launch.this, MainActivity.class);
                 startActivity(myintent);
             }
         });
+
+        // Go to youtube
+        View imageButton = findViewById(R.id.imageButton);
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtube.com/channel/UCNRFvq0JOm5VqHIBDDQgkMA")));
+            }
+        });
+
     }
 
 }

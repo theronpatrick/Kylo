@@ -71,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
 
             View myButton = buttonArray[i];
 
+            // Turn off default click
+            myButton.setSoundEffectsEnabled(false);
+
 
             final int finalI = i;
             myButton.setOnTouchListener(new View.OnTouchListener() {

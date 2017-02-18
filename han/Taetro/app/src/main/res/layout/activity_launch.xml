@@ -23,15 +23,38 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <Button
-        android:text="ButtonLaunch"
-        android:id="@+id/buttonLaunch"
-        android:onClick="buttonClick"
-        app:layout_widthPercent="30%"
-        app:layout_heightPercent="24%"
-        app:layout_marginTopPercent="8%"
-        app:layout_marginLeftPercent="25%"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="#DB363F" />
+    <TextView
+        android:text="TAETRO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="104dp"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_centerHorizontal="true"
+        android:textSize="46sp" />
+
+    <TextView
+        android:text="SOUNDPACK II"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soundpackText"
+        android:textColor="@color/colorButtonNormal"
+        android:layout_marginTop="59dp"
+        android:textSize="28sp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="30%"
+        app:srcCompat="@drawable/youtube"
+        android:id="@+id/imageButton"
+        android:scaleType="fitCenter"
+
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp" />
 
 </android.support.percent.PercentRelativeLayout>
