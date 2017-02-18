@@ -1,8 +1,10 @@
 package com.theronp.taetro;
 
 import android.content.res.AssetManager;
+import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.media.SoundPool;
 import android.support.v4.view.MotionEventCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -31,31 +33,46 @@ public class MainActivity extends AppCompatActivity {
         // Enable the Up button
         ab.setDisplayHomeAsUpEnabled(true);
 
-        // int[] soundArray = {R.raw.pad2, R.raw.pad3, R.raw.pad4, R.raw.pad1, R.raw.glass1, R.raw.glass2, R.raw.bucket1, R.raw.glass4, R.raw.glass3, R.raw.kick1, R.raw.toaster1, R.raw.bucket2};
 
-        int[] soundArray = {R.raw.pad2, R.raw.pad3, R.raw.pad4, R.raw.pad1, R.raw.glass1, R.raw.glass2, R.raw.bucket1, R.raw.glass4, R.raw.glass3, R.raw.kick1, R.raw.toaster1, R.raw.bucket2};
 
         // TODO: Be smart about this
-        View[] buttonArray = {findViewById(R.id.button1),findViewById(R.id.button2),findViewById(R.id.button3),findViewById(R.id.button4),findViewById(R.id.button5),findViewById(R.id.button6),findViewById(R.id.button7),findViewById(R.id.button8), findViewById(R.id.button9), findViewById(R.id.button10), findViewById(R.id.button11), findViewById(R.id.button12)};
+        final View[] buttonArray = {findViewById(R.id.button1),findViewById(R.id.button2),findViewById(R.id.button3),findViewById(R.id.button4),findViewById(R.id.button5),findViewById(R.id.button6),findViewById(R.id.button7),findViewById(R.id.button8), findViewById(R.id.button9), findViewById(R.id.button10), findViewById(R.id.button11), findViewById(R.id.button12)};
 
-        MediaPlayer[] mediaPlayerArray = new MediaPlayer[12];
+        // Get audio pool
+        AudioAttributes attrs = new AudioAttributes.Builder()
+                .setUsage(AudioAttributes.USAGE_GAME)
+                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                .build();
+        final SoundPool sp = new SoundPool.Builder()
+                .setMaxStreams(16)
+                .setAudioAttributes(attrs)
+                .build();
 
-        for (int i = 0; i < soundArray.length; i++) {
+        setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
-            final MediaPlayer mp = MediaPlayer.create(this, soundArray[i]);
+        final int soundIds[] = new int[12];
+        final int streamIds[] = new int[12];
 
-            AssetManager assets = this.getAssets();
+        // Load sounds into array
+        soundIds[0] = sp.load(this, R.raw.pad2, 1);
+        soundIds[1] = sp.load(this, R.raw.pad3, 1);
+        soundIds[2] = sp.load(this, R.raw.pad4, 1);
+        soundIds[3] = sp.load(this, R.raw.pad1, 1);
+        soundIds[4] = sp.load(this, R.raw.glass1, 1);
+        soundIds[5] = sp.load(this, R.raw.glass2, 1);
+        soundIds[6] = sp.load(this, R.raw.bucket1, 1);
+        soundIds[7] = sp.load(this, R.raw.glass4, 1);
+        soundIds[8] = sp.load(this, R.raw.glass3, 1);
+        soundIds[9] = sp.load(this, R.raw.kick1, 1);
+        soundIds[10] = sp.load(this, R.raw.toaster1, 1);
+        soundIds[11] = sp.load(this, R.raw.bucket2, 1);
 
-            mediaPlayerArray[i] = mp;
+        for (int i = 0; i < buttonArray.length; i++) {
 
             View myButton = buttonArray[i];
 
-            final int buttonIndex = i;
 
-            Log.d("test", "in loop");
-            Log.d("test", Integer.toString(i));
-            Log.d("test", Integer.toString(soundArray[i]));
-
+            final int finalI = i;
             myButton.setOnTouchListener(new View.OnTouchListener() {
                 public boolean onTouch(View v, MotionEvent event) {
                     // ... Respond to touch events
@@ -63,27 +80,15 @@ public class MainActivity extends AppCompatActivity {
 
                     String DEBUG_TAG = "test";
 
-                    Log.d("test","index tapped");
-                    Log.d("test", Integer.toString(buttonIndex));
-
                     switch(action) {
                         case (MotionEvent.ACTION_DOWN) :
                             Log.d(DEBUG_TAG,"Action was DOWN");
-                            try {
-                                playSound(mp);
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
+                            playSound(sp, soundIds, streamIds, finalI);
+                            buttonArray[finalI].setBackgroundColor(0xFFFF5554);
                             return true;
                         case (MotionEvent.ACTION_UP) :
                             Log.d(DEBUG_TAG,"Action was UP");
-                            return true;
-                        case (MotionEvent.ACTION_CANCEL) :
-                            Log.d(DEBUG_TAG,"Action was CANCEL");
-                            return true;
-                        case (MotionEvent.ACTION_OUTSIDE) :
-                            Log.d(DEBUG_TAG,"Movement occurred outside bounds " +
-                                    "of current screen element");
+                            buttonArray[finalI].setBackgroundColor(0xFFDB363F);
                             return true;
                         default :
                             return true;
@@ -95,33 +100,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void playSound(MediaPlayer mp) throws IOException {
+    public void playSound(SoundPool sp, int[] soundIds, int[] streamIds, int i) {
         Log.d("test","play sound");
 
-        if (mp.isPlaying()) {
-            mp.stop();
-            mp.prepare();
-            mp.start();
-        } else {
-            mp.start();
-        }
+
+        sp.stop(streamIds[i]);
+
+        streamIds[i] = sp.play(soundIds[i], 1, 1, 1, 0, 1);
 
     }
-
-    public static int getResId(String resName, Class<?> c) {
-
-        try {
-            Field idField = c.getDeclaredField(resName);
-            return idField.getInt(idField);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return -1;
-        }
-    }
-
-
-
-
 
 
 }
