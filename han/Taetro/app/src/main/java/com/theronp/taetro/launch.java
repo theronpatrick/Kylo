@@ -18,6 +18,7 @@ public class launch extends AppCompatActivity {
         setContentView(R.layout.activity_launch);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         // Go to app
         View myButton = findViewById(R.id.soundpackText);
